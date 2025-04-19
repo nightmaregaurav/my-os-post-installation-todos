@@ -146,6 +146,7 @@ sudo reboot --now
 # Dash to Dock
 # Docker
 # Frequency Boost Switch
+# Gravatar
 # Hide Top Bar
 # Just Perfection
 
@@ -195,6 +196,9 @@ sudo reboot --now
 
 # Frequency Boost Switch
 # - Add poolkit rules On
+
+# Gravatar
+# - Set mail address
 
 # Hide Top Bar
 # - Show panel when Cursor approaches edge of the screen
