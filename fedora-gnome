@@ -242,4 +242,6 @@ sudo swapon -s
 nvm install 22
 nvm install 14  # [For Work]
 
-# Install Sublime Text (VsCode is too slow for quick tasks) Following instructions from official website
+# Install Sublime Text (VsCode is too slow for quick tasks)
+sudo dnf config-manager addrepo --from-repofile=https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+sudo dnf install sublime-text
