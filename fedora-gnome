@@ -236,3 +236,8 @@ sudo nano /etc/fstab  # - Write: `/swapfile swap swap defaults 0 0`
 sudo swapon -s  # note the swap block
 sudo swapoff <SWAP_BLOCK>
 sudo swapon -s
+
+# Install NVM and Node
+# https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+nvm install 22
+nvm install 14
