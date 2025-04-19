@@ -219,3 +219,5 @@ dotnet-install --channel STS
 sudo ln -s ~/.dotnet/dotnet /usr/bin/dotnet 
 dotnet tool install --global dotnet-ef
 
+# Trust dotnet certificate
+# https://github.com/nightmaregaurav/snippets/blob/master/Manuals/Dotnet%20Cert%20Trust%20in%20Linux.md
