@@ -203,3 +203,6 @@ sudo reboot --now
 # Just Perfection
 # - Turn off weather and events
 # - Startup status Desktop
+
+# Add world clocks
+# - Perth, Hanoi (For Work)
