@@ -1,0 +1,205 @@
+# Chage the HOSTNAME
+sudo hostnamectl set-hostname --pretty "NightmareGaurav's laptop"
+sudo hostnamectl set-hostname --static ghost
+
+# Disable Hibernate and Suspend
+sudo systemctl mask suspend.target
+sudo systemctl mask hibernate.target
+
+# Remove all packages listed by this command
+flatpak list
+
+# Remove packages that are not going to be used or are going to be installed manually when needed
+sudo dnf remove gnome-maps gnome-calculator gnome-tour gnome-remote-desktop gnome-initial-setup gnome-epub-thumbnailer libreoffice* gnome-boxes gnome-characters gnome-contacts gnome-connections evince rhythmbox mediawriter gnome-software flatpak gnome-calendar gnome-disk-utility gnome-font-viewer gnome-logs gnome-text-editor gnome-user-docs gnome-weather virtualbox-guest-additions hyperv-daemons gnome-classic-session gnome-shell-extension-background-logo parted evince-* simple-scan yelp malcontent-ui-lib flatpak-session-helper gnome-abrt gnome-color-manager baobab totem gnome-backgrounds fedora-bookmarks podman desktop-backgrounds-gnome qemu-guest-agent open-vm-tools-desktop vim-minimal snapshot orca firefox* hplip qt* abrt-addon-kerneloops
+
+# Autoremove leftovers
+sudo dnf autoremove 
+
+# Restart
+sudo reboot --now
+
+# Set input method in login screen to be english
+localectl set-x11-keymap us
+
+# Update (Keep an eye on unwanted dependency)
+sudo dnf update
+
+# Install fastfetch
+sudo dnf install fastfetch
+
+# Download and install chrome, Login and sync, Login to Bitwarden, Install and login to Teams PWA
+sudo dnf install ./google-chrome-stable_current_x86_64.rpm
+
+# Restart
+sudo reboot --now
+
+# Scan old kernels, remove if you want
+sudo dnf list --installed *kernel*
+sudo dnf remove kernel-core-0:<Version>
+
+# Some essentials
+sudo dnf install gnome-extensions-app gnome-tweaks libappindicator-gtk3 libXScrnSaver glibc gnome-shell-extension-appindicator
+
+# Install VsCode: Follow instruction from the official site
+
+# Install Clapper (VLC is QT application)
+sudo dnf install clapper
+
+# Install Proton VPN: Follow instructon from the official website
+
+# Install Motrix Download Manager: Follow instructon from the official website
+
+# Install Azure Data Studio: Follow instructon from the official website (For Work)
+
+# Download and Install Jetbrains toolbox from official website, Login to Jetbrains Account using Github and Install Rider and Webstorm, Tweak Toolbox settings
+
+# Download and Install Mattermost from official website (For Work)
+
+# Install Scrcpy
+sudo dnf copr enable zeno/scrcpy && sudo dnf install scrcpy
+
+# Configure scrcpy using manual from my repository
+# https://github.com/nightmaregaurav/ScrcpyDesktopEntry
+
+# Install Official Docker
+sudo dnf remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine
+sudo rm -rf /var/lib/docker/
+sudo dnf -y install dnf-plugins-core
+sudo dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl enable --now docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
+sudo systemctl restart docker.service
+sudo systemctl restart containerd.service
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+
+# Install MsSql Docker instance (For Work)
+# https://github.com/nightmaregaurav/quick-mssql-docker
+
+# Login to Mattermost and tweak settings (For Work)
+
+# Configure Chrome Settings (Most of the time nothing needs to be done, syncc works)
+# Configure Chrome DevTool Settings (Most of the time nothing needs to be done, syncc works)
+# Login to extensions
+
+# Login with Github in VsCode and Sync(Pull)
+
+# Login to proton VPN
+
+# Tweak settings for Motrix
+
+# Tweak settings for Video Player (Clapper)
+
+# Open Azure Data Studio and install Dacpac Extension, Add Connections (For Work)
+
+# Setup SSH github Auth
+
+# Create Repositories & Research Folders on Home and pin on file manager sidebar
+
+# Clone Ongoing Research Projects into Research folder
+
+# Clone Ongoing Projects, rc, & work related projects into Repositories folder
+
+# Setup rc
+
+# Restart
+sudo reboot --now
+
+# Tweak Gnome Tweaks
+# Disable Middle click paste
+# Enable "Show Extended Input sources"
+# Enable Maximize and Minimize button
+# Move Titlebar buttons to Left
+# Add teams as startup application (For work)
+
+# Tewak System Settings
+# Pair Devices
+# Power Button Behaviour Either sleep, or nothing
+# Power saving, Dim after 15 minutes, sleep or whatever after 1 hous on battery
+# App switching, include app from current workspace only
+# Change accent color to green
+# Change Wallpaper
+# Enable search on Repositories and Research
+# Enable eyesight and moment reminder for 3/30 min
+# Add Nepali input source
+# Drag english input source to top
+# Enable overamplification from hearing
+# Enable locate pointer from pointing
+# Set time for screen blank to 15 min
+# Set time from screen blank to screen lock 5 min
+# Enable automatic timezone
+# Get back to keyboard settigs and set shortcuts. Launchers>Home Folder = Win+E, Remove System>Show the notification List, Add open terminal shortcut to Ctrl+Alt+T
+
+# Install Extensions
+# Blutooth Battery Meter
+# Blur My Shell
+# Caffeine
+# Clipboard indicator
+# Compiz windows effect
+# Coverflow Alt-Tab
+# Custom Command Menu
+# Dash to Dock
+# Docker
+# Frequency Boost Switch
+# Hide Top Bar
+# Just Perfection
+
+## Tweak extensions settings
+
+# Blutooth Battery Meter
+# - Show battery icon off
+# - Show battery percentage on
+# - Sort devices off
+# - Enable Battery indicator
+# - Display battery percentage off
+# - Connection status Default
+# - Indicator type Dot
+# - Indicator color scheme Symbolic
+# - Indicator for Upower On
+
+# Blur My Shell
+# - Hide topbar extension compatibility on
+
+# Clipboard indicator
+# - Clear clipboard history on reboot On
+# - History size 30
+# - Max file size 10 MB
+# - All notifications Off
+# - Add Toggle menu shortcut to Win+V
+
+# Compiz windows effect
+# - Add Resize effect
+
+# Coverflow Alt-Tab
+# - Hide panel while switching Off
+
+# Custom Command Menu
+# - Remove demo command
+# - Change menu type to icon
+
+# Dash to Dock
+# - Reduce Icon size to 24
+# - Increase scaling to 1
+# - Isolate monitor
+# - Animate show application On
+# - Shrink the dash On
+
+# Docker
+# - Show Menus Containers
+# - Items Per row 2
+
+# Frequency Boost Switch
+# - Add poolkit rules On
+
+# Hide Top Bar
+# - Show panel when Cursor approaches edge of the screen
+# - Keep hot corner sensitive even in hidden state
+
+# Just Perfection
+# - Turn off weather and events
+# - Startup status Desktop
