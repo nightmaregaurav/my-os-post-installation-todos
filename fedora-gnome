@@ -241,3 +241,5 @@ sudo swapon -s
 # https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
 nvm install 22
 nvm install 14  # [For Work]
+
+# Install Sublime Text (VsCode is too slow for quick tasks) Following instructions from official website
