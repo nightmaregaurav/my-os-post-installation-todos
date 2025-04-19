@@ -221,3 +221,18 @@ dotnet tool install --global dotnet-ef
 
 # Trust dotnet certificate
 # https://github.com/nightmaregaurav/snippets/blob/master/Manuals/Dotnet%20Cert%20Trust%20in%20Linux.md
+
+# Turn off swap on ram cause interfere with the dual-channel memory configuration
+systemctl --type swap  # note the name
+sudo systemctl mask <NAME>
+sudo touch /swapfile
+sudo chattr +C /swapfile
+sudo fallocate -l 48G /swapfile
+sudo chmod 600 /swapfile
+sudo lsattr /swapfile  # make sure you see the letter C in the results: ---------------C------ /swapfile
+sudo mkswap /swapfile  # Setting up swapspace version 1, size = 48 GiB...
+sudo swapon /swapfile
+sudo nano /etc/fstab  # - Write: `/swapfile swap swap defaults 0 0`
+sudo swapon -s  # note the swap block
+sudo swapoff <SWAP_BLOCK>
+sudo swapon -s
