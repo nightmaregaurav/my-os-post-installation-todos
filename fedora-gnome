@@ -271,10 +271,13 @@ sudo dnf5 group remove libreoffice
 sudo dnf5 group install "sound-and-video"
 sudo dnf5 group upgrade multimedia --setopt=install_weak_deps=False --exclude=PackageKit-gstreamer-plugin
 sudo dnf5 group upgrade "sound-and-video"
-sudo dnf install gstreamer1-plugin-openh264 gstreamer1-plugins-ugly gstreamer1-libav gstreamer1-plugins-bad-free gstreamer1-plugins-bad-freeworld
+sudo dnf install gstreamer1-plugin-openh264 gstreamer1-plugins-ugly gstreamer1-libav gstreamer1-plugins-bad-free gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good gstreamer1-plugins-base-tools gstreamer1-plugins-good-extras
 sudo dnf install intel-media-driver
 sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 sudo dnf install libva-nvidia-driver
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 sudo dnf autoremove
+
+# Install KVM
+sudo dnf install qemu-kvm libvirt-daemon libvirt-client bridge-utils
