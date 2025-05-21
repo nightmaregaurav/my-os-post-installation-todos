@@ -13,7 +13,7 @@ flatpak list
 sudo dnf remove gnome-maps gnome-calculator gnome-tour gnome-remote-desktop gnome-initial-setup gnome-epub-thumbnailer libreoffice* gnome-boxes gnome-characters gnome-contacts gnome-connections evince rhythmbox mediawriter gnome-software flatpak gnome-calendar gnome-disk-utility gnome-font-viewer gnome-logs gnome-text-editor gnome-user-docs gnome-weather virtualbox-guest-additions hyperv-daemons gnome-classic-session gnome-shell-extension-background-logo parted evince-* simple-scan yelp malcontent-ui-lib flatpak-session-helper gnome-abrt gnome-color-manager baobab totem gnome-backgrounds fedora-bookmarks podman desktop-backgrounds-gnome qemu-guest-agent open-vm-tools-desktop vim-minimal snapshot orca firefox* hplip qt* abrt-addon-kerneloops
 
 # Autoremove leftovers
-sudo dnf autoremove 
+sudo dnf autoremove
 
 # Restart
 sudo reboot --now
@@ -39,11 +39,6 @@ sudo dnf remove kernel-core-0:<Version>
 
 # Some essentials
 sudo dnf install gnome-extensions-app gnome-tweaks libappindicator-gtk3 libXScrnSaver glibc gnome-shell-extension-appindicator
-
-# Install VsCode: Follow instruction from the official site
-
-# Install Clapper (VLC is QT application)
-sudo dnf install clapper
 
 # Install Proton VPN: Follow instructon from the official website
 
@@ -87,13 +82,9 @@ sudo systemctl enable containerd.service
 # Configure Chrome DevTool Settings (Most of the time nothing needs to be done, syncc works)
 # Login to extensions
 
-# Login with Github in VsCode and Sync(Pull)
-
 # Login to proton VPN
 
 # Tweak settings for Motrix
-
-# Tweak settings for Video Player (Clapper)
 
 # Open Azure Data Studio and install Dacpac Extension, Add Connections (For Work)
 
@@ -226,7 +217,7 @@ dotnet-install --channel 6.0  # [For Work]
 dotnet-install --channel 7.0  # [For Work]
 dotnet-install --channel LTS
 dotnet-install --channel STS
-sudo ln -s ~/.dotnet/dotnet /usr/bin/dotnet 
+sudo ln -s ~/.dotnet/dotnet /usr/bin/dotnet
 dotnet tool install --global dotnet-ef
 
 # Trust dotnet certificate
@@ -256,14 +247,6 @@ sudo swapon -s
 nvm install 22
 nvm install 14  # [For Work]
 
-# Install Sublime Text (VsCode is too slow for quick tasks)
-sudo dnf config-manager addrepo --from-repofile=https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
-sudo dnf install sublime-text
-# - Install package control
-# - Install Adaptify theme package
-# - Set theme as Adaptive
-# - Set color scheme as Monokai
-
 # Make system support MKV
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -281,3 +264,24 @@ sudo dnf autoremove
 
 # Install KVM
 sudo dnf install qemu-kvm libvirt-daemon libvirt-client bridge-utils
+
+# Install Zed and Login with github
+curl -f https://zed.dev/install.sh | sh
+
+# Install Evince (To use as PDF previewer in Zed)
+sudo dnf install evince
+
+# remove unnecessary repositories
+sudo rm /etc/yum.repos.d/_copr\:copr.fedorainfracloud.org\:phracek\:PyCharm.repo
+sudo rm /etc/yum.repos.d/rpmfusion-nonfree-steam.repo
+sudo rm /etc/yum.repos.d/vscode.repo
+sudo rm /etc/yum.repos.d/sublime-text.repo
+dnf5 repo list  # scan manually and remove any unwanted repositories
+
+# Install VLC
+sudo dnf install vlc
+
+# Cleanup
+sudo dnf autoremove
+sudo dnf clean all
+dnf clean all
