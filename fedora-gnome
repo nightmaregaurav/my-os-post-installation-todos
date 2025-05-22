@@ -268,8 +268,8 @@ sudo dnf install qemu-kvm libvirt-daemon libvirt-client bridge-utils
 # Install Zed and Login with github
 curl -f https://zed.dev/install.sh | sh
 
-# Install Evince (To use as PDF previewer in Zed)
-sudo dnf install evince
+# Install zathura (To use as PDF previewer in Zed)
+sudo dnf install zathura zathura-pdf-poppler
 
 # remove unnecessary repositories
 sudo rm /etc/yum.repos.d/_copr\:copr.fedorainfracloud.org\:phracek\:PyCharm.repo
