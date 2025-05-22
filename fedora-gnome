@@ -28,7 +28,7 @@ sudo dnf update
 sudo dnf install fastfetch
 
 # Download and install chrome, Login and sync, Login to Bitwarden, Install and login to Teams PWA
-sudo dnf install ./google-chrome-stable_current_x86_64.rpm
+sudo dnf install ./google-chrome-beta.rpm
 
 # Restart
 sudo reboot --now
