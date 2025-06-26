@@ -270,6 +270,10 @@ curl -f https://zed.dev/install.sh | sh
 
 # Install zathura (To use as PDF previewer in Zed)
 sudo dnf install zathura zathura-pdf-poppler
+mkdir -p ~/.config/zathura
+touch ~/.config/zathura/zathurarc
+sed -i '/^set selection-clipboard /d' ~/.config/zathura/zathurarc
+echo 'set selection-clipboard clipboard' >> ~/.config/zathura/zathurarc
 
 # remove unnecessary repositories
 sudo rm /etc/yum.repos.d/_copr\:copr.fedorainfracloud.org\:phracek\:PyCharm.repo
