@@ -287,3 +287,8 @@ sudo dnf upgrade --allowerasing  --allow-downgrade
 sudo dnf autoremove
 sudo dnf clean all
 dnf clean all
+
+# Increase the number of file watchers
+sudo nano /etc/sysctl.conf
+# add `fs.inotify.max_user_watches=524288`
+sudo sysctl -p
