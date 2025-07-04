@@ -1,0 +1,38 @@
+setup-alpine
+apk update
+apk upgrade
+setup-wayland-base
+apk add mesa-dri-gallium mesa-va-gallium
+
+# check which Intel driver is needed based on chipset model, check wiki for extra config
+apk add intel-media-driver libva-intel-driver linux-firmware-i915
+
+# check which AMD driver is needed based on chip model, check wiki for extra config
+apk add linux-firmware-amdgpu linux-firmware-radeon
+
+apk add mkinitfs
+apk add nano
+
+# Make sure it is `features="keymap cryptsetup kms ata base ide scsi usb virtio ext4"`
+nano /etc/mkinitfs/mkinitfs.conf 
+
+setup-desktop 
+apk fix
+apk update
+apk upgrade
+apk add networkmanager-wifi
+apk add networkmanager-bluetooth
+apk add sudo
+
+# add `<USERNAME> ALL=(ALL:ALL) ALL`
+nano /etc/sudoers
+reboot now
+
+sudo rm /root/.ash_history
+sudo apk add git
+mkdir Repositories
+git clone https://github.com/nightmaregaurav/my-os-post-installation-todos
+git clone https://github.com/nightmaregaurav/rc
+
+sudo apk del gnome-maps gnome-calculator gnome-tour gnome-remote-desktop gnome-initial-setup gnome-epub-thumbnailer libreoffice* gnome-boxes gnome-characters gnome-contacts gnome-connections evince rhythmbox mediawriter gnome-software flatpak gnome-calendar gnome-disk-utility gnome-font-viewer gnome-logs gnome-text-editor gnome-user-docs gnome-weather virtualbox-guest-additions hyperv-daemons gnome-classic-session gnome-shell-extension-background-logo parted evince-* simple-scan yelp malcontent-ui-lib *vlc* flatpak-session-helper gnome-abrt gnome-color-manager baobab totem gnome-backgrounds fedora-bookmarks podman desktop-backgrounds-gnome qemu-guest-agent open-vm-tools-desktop vim-minimal snapshot orca firefox* hplip qt* abrt-addon-kerneloops gamemode fedora-chromium-config sane-airscan ghostscript ImageMagick* gnome-clocks obs* default-editor PackageKit* gnome-browser-connector decibels epiphany evince* firefox doas gnome-music gnome-software* docker*
+sudo apk add fastfetch chromium
