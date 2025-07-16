@@ -1,0 +1,31 @@
+# Change touchpad setting and turn tap to click on
+# Install Chrome
+## Log in to Gmail, GitHub, and MS Office
+# Install Jetbrains Toolbox
+## Login to Jetbrains Toolbox
+## Install Rider, PyCharm, WebStorm
+# Install Microsoft Teams app and log in
+# Install macdroid
+# Install mattermost (For Work)
+# Install homebrew
+## brew install docker —cask
+## brew install docker-compose
+# mkdir ~/Repositories
+# Generate and Add git ssh to github
+# Clone work repos
+# Close mysql docker setup repo and run
+# Install dotnet-install script to /usr/local/bin
+# Install Dotnet 6.0, 7.0, LTS, STS
+# Install ef globally
+# dotnet dev-certs https --trust
+# Install fastfetch
+# brew install nvm
+# nvm install 22
+# nvm install 14 (For Work)[Open terminal using Rosetta to do this]
+# Install Azure Data Studio
+# brew install vlc --cask
+# brew install protonvpn --cask
+# brew install motrix --cask
+# Install CopyClip
+# brew install --cask android-platform-tools
+# brew install scrcpy
