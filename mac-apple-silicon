@@ -23,6 +23,7 @@
 # nvm install 22
 # nvm install 14 (For Work)[Open terminal using Rosetta to do this]
 # Install Azure Data Studio
+# brew install vlc --cask
 # brew install protonvpn --cask
 # brew install motrix --cask
 # Install CopyClip
