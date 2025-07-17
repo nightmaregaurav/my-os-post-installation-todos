@@ -29,3 +29,14 @@
 # Install CopyClip
 # brew install --cask android-platform-tools
 # brew install scrcpy
+# Add World Clocks Widget
+## Kathmandu
+## Perth
+## Hanoi
+## Dallas
+# Add Devices Battery Status Widget
+# Add Month & Day displaay calender widget
+# Add Week weather widget
+# Add Desktops and make total of 4
+# Clone and add rc to .profile
+# Add git profiles
