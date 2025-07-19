@@ -1,6 +1,7 @@
 # Change touchpad setting and turn tap to click on
 # Install Chrome
 ## Log in to Gmail, GitHub, and MS Office
+# Install Zed
 # Install Jetbrains Toolbox
 ## Login to Jetbrains Toolbox
 ## Install Rider, PyCharm, WebStorm
@@ -40,3 +41,11 @@
 # Add Desktops and make total of 4
 # Clone and add rc to .profile
 # Add git profiles
+# Make Mattermost and Teams launch on login (For work)
+# Setup siri
+# Setup Mail app
+# Setup screen display sizes
+# Setup Hot corners (TL stage manager, BL launchpad, TR notifications, BR Desktop)
+# Adjust dock size and elements
+# Adjust pins in Finder
+# Install WhatsApp
