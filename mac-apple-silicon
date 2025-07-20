@@ -71,6 +71,5 @@
 ## Settings > Search current folder while searching
 # Desktop and Dock
 ## Disable Show recent and suggested apps in dock
-## Run `defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock` in terminal to show/hide dock faster
+## Run `defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock` in terminal to show/hide dock faster
 ## Mission Control > Turn off automatic rearrangement
-
