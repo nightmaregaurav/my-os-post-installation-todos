@@ -38,14 +38,39 @@
 # Add Devices Battery Status Widget
 # Add Month & Day displaay calender widget
 # Add Week weather widget
-# Add Desktops and make total of 4
+# Add Desktops and make a total of 4
 # Clone and add rc to .profile
 # Add git profiles
 # Make Mattermost and Teams launch on login (For work)
-# Setup siri
+# Setup Siri
 # Setup Mail app
 # Setup screen display sizes
 # Setup Hot corners (TL stage manager, BL launchpad, TR notifications, BR Desktop)
-# Adjust dock size and elements
+# Adjust dock size and elements, make it hide automatically
 # Adjust pins in Finder
 # Install WhatsApp
+# Add 2 more fingerprints, but use the same finger
+# Displays > Disable True Tone
+# Appearance
+## Disable wallpaper tinting in Windows
+## Turn On always Show Scrollbar
+## Click in the scrollbar > jump to the spot that's clicked
+# Language and region > Set appropriate settings
+# Lock screen
+## Turn off screen saver
+## Turn off display on battery and on power after 10 minutes
+## Require password immediately
+# Finder
+## View > Toggle Show status and path bar
+## Right click on toolbar> Customize > reorder > Airdrop, Share, space, Sort, View, Space, Options, Search
+## Settings > Show Home folder on start
+## Settings > Do not open in new tab instead of windows
+## Settings > Delete all tags
+## Settings > Show all locations in sidebar except AirDrop and Recent tags
+## Settings > Show all filename extensions
+## Settings > Search current folder while searching
+# Desktop and Dock
+## Disable Show recent and suggested apps in dock
+## Run `defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock` in terminal to show/hide dock faster
+## Mission Control > Turn off automatic rearrangement
+
