@@ -59,6 +59,8 @@
 ## Turn off screen saver
 ## Turn off display on battery and on power after 10 minutes
 ## Require password immediately
+# Airdrop and Handoff
+## Turn off AirPlay receiver (It uses port 5000)
 # Finder
 ## View > Toggle Show status and path bar
 ## Right click on toolbar> Customize > reorder > Airdrop, Share, space, Sort, View, Space, Options, Search
