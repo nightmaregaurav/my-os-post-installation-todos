@@ -70,6 +70,8 @@
 ## Settings > Show all locations in sidebar except AirDrop and Recent tags
 ## Settings > Show all filename extensions
 ## Settings > Search current folder while searching
+## Settings > Battery > options > turn off optimize video streaming
+## Settings > Battery > options > turn off slightly dim display on battery
 # Desktop and Dock
 ## Disable Show recent and suggested apps in dock
 ## Run `defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock` in terminal to show/hide dock faster
