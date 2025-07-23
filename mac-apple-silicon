@@ -76,3 +76,5 @@
 ## Disable Show recent and suggested apps in dock
 ## Run `defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock` in terminal to show/hide dock faster
 ## Mission Control > Turn off automatic rearrangement
+# Disable saving the application state on shutdown
+defaults write com.apple.loginwindow TALLogoutSavesState -bool false
