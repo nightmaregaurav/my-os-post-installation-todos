@@ -1,4 +1,4 @@
-# Massively increase virtualized macOS by disabling spotlight.
+# Massively increase virtualized macOS performance by disabling spotlight.
 sudo mdutil -i off -a
 
 # Enable performance mode
