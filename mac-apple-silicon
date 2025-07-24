@@ -79,3 +79,9 @@
 # Disable saving the application state on shutdown
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 # install postman
+# click on Finder from Top bar
+## Click on services
+## Click on service settings
+### Launchpad and dock > Turn off hiding/showing dock and launchpad
+### Mission Control > Turn off quick note
+### Input source > Turn on prev and next inout source
