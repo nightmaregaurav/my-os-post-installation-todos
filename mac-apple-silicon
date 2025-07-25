@@ -85,3 +85,14 @@ defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 ### Launchpad and dock > Turn off hiding/showing dock and launchpad
 ### Mission Control > Turn off quick note
 ### Input source > Turn on prev and next inout source
+# Settings
+## Control Center
+### Show Accessibility shortcuts, Music Recognition, Hearing, Fast user switching, Keyboard Brightness in control center
+### SHow Battery Percentage
+### Clock > Show Date > Always
+## Privacy and security
+### Location Services > System Services > on show on control center, off mac analytics
+## iCloud
+### Turn on advance data protection
+### Turn on access data on web
+### Turn on all apps under 'Saved to iCloud`
