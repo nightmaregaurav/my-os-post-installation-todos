@@ -96,3 +96,4 @@ defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 ### Turn on advance data protection
 ### Turn on access data on web
 ### Turn on all apps under 'Saved to iCloud`
+# Settings > General > Software Updates > turn all off except download
