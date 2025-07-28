@@ -97,3 +97,4 @@ defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 ### Turn on access data on web
 ### Turn on all apps under 'Saved to iCloud`
 # Settings > General > Software Updates > turn all off except download
+# Settings > General > Sharing > Click Edit to update the Local hostname and update
