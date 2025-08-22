@@ -101,3 +101,7 @@ defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 ### Turn on all apps under 'Saved to iCloud`
 # Settings > General > Software Updates > turn all off except download
 # Settings > General > Sharing > Click Edit to update the Local hostname and update
+# Settings > Spotlight > Turn off all apps except settings, calculator, calendar, contacts, dictionary
+# Settings > Spotlight > Turn off show related content
+# Settings > Spotlight > Turn off Help apple improve
+# Settings > Spotlight > Turn off all "results from system" except apps and iphone apps
