@@ -1,5 +1,6 @@
 # Change touchpad setting and turn tap to click on
-# Enable drag with trackpad and choose 3 fingers drag
+# Enable drag with trackpad and choose "3 finger drag"
+# Set look up and data detectors to "tap with 3 fingers"
 # Install Chrome
 ## Log in to Gmail, GitHub, and MS Office
 # Install Zed
@@ -49,7 +50,7 @@
 # Adjust dock size and elements, make it hide automatically
 # Adjust pins in Finder
 # Install WhatsApp
-# Add 2 more fingerprints, but use the same finger
+# Add 1 more fingerprint, but use the same finger
 # Displays > Disable True Tone
 # Appearance
 ## Disable wallpaper tinting in Windows
@@ -71,6 +72,7 @@
 ## Settings > Show all locations in sidebar except AirDrop and Recent tags
 ## Settings > Show all filename extensions
 ## Settings > Search current folder while searching
+## Settings > Appearance > Sidebar Icon Size > Small
 ## Settings > Battery > options > turn off optimize video streaming
 ## Settings > Battery > options > turn off slightly dim display on battery
 # Desktop and Dock
@@ -79,17 +81,17 @@
 ## Mission Control > Turn off automatic rearrangement
 # Disable saving the application state on shutdown
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
-# install postman
-# click on Finder from Top bar
+# install PostMan
+# click on Finder from the top bar
 ## Click on services
 ## Click on service settings
 ### Launchpad and dock > Turn off hiding/showing dock and launchpad
 ### Mission Control > Turn off quick note
-### Input source > Turn on prev and next inout source
+### Input source > Turn on prev and next input source
 # Settings
 ## Control Center
 ### Show Accessibility shortcuts, Music Recognition, Hearing, Fast user switching, Keyboard Brightness in control center
-### SHow Battery Percentage
+### Show Battery Percentage
 ### Clock > Show Date > Always
 ## Privacy and security
 ### Location Services > System Services > on show on control center, off mac analytics
