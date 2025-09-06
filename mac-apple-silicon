@@ -40,7 +40,7 @@
 # Add Devices Battery Status Widget
 # Add Month & Day displaay calender widget
 # Add Week weather widget
-# Add git profiles
+# Add git profiles (Using git mkprofile)
 # Make Mattermost and Teams launch on login (For work)
 # Setup Siri
 # Setup Mail app
