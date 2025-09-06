@@ -6,7 +6,7 @@
 # Install Zed
 # Install Jetbrains Toolbox
 ## Login to Jetbrains Toolbox
-## Install Rider, PyCharm, WebStorm
+## Install Rider, PyCharm, WebStorm, android studio
 # Install Microsoft Teams app and log in
 # Install mattermost (For Work)
 # Install homebrew
@@ -29,7 +29,8 @@
 # brew install protonvpn --cask
 # brew install motrix --cask
 # brew install maccy
-# brew install --cask android-platform-tools
+# Clone and add rc to .profile
+# Open Android Studio and install Android SDK on `~/Android/Sdk` folder
 # brew install scrcpy
 # Add World Clocks Widget
 ## Kathmandu
@@ -40,7 +41,6 @@
 # Add Month & Day displaay calender widget
 # Add Week weather widget
 # Add Desktops and make a total of 4
-# Clone and add rc to .profile
 # Add git profiles
 # Make Mattermost and Teams launch on login (For work)
 # Setup Siri
