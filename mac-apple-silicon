@@ -19,7 +19,7 @@
 # Install dotnet-install script to /usr/local/bin
 # Install Dotnet 6.0, 7.0, LTS, STS
 # Install ef globally
-# dotnet dev-certs https --trust
+# dotnet dev-certs https --trustx
 # Install fastfetch
 # brew install nvm
 # nvm install 22
@@ -40,7 +40,6 @@
 # Add Devices Battery Status Widget
 # Add Month & Day displaay calender widget
 # Add Week weather widget
-# Add Desktops and make a total of 4
 # Add git profiles
 # Make Mattermost and Teams launch on login (For work)
 # Setup Siri
