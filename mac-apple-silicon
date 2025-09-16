@@ -26,7 +26,7 @@
 # nvm install 14 (For Work)[Open terminal using Rosetta to do this]
 # Install Azure Data Studio
 # Clone and add rc repository inside ~/Repositories folder and source it inside .profile
-# brew install iina --cask
+# brew install plex-media-server
 # brew install protonvpn --cask
 # brew install motrix --cask
 # brew install maccy
