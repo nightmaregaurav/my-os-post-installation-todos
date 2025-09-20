@@ -26,7 +26,11 @@
 # nvm install 14 (For Work)[Open terminal using Rosetta to do this]
 # Install Azure Data Studio
 # Clone and add rc repository inside ~/Repositories folder and source it inside .profile
-# brew install plex-media-server
+# brew install jellyfin
+## create folder Jellyfin in the home dir and create Movies, Music, Shows folders inside it
+## launch Jellyfin, create a user and add Movies, Music, Shows libraries to point to these folders, enable real-time update and file metadata usage
+## open settings > dashboard > disable quick access
+## open settings > dashboard > users and allow all permissions to the main user
 # brew install protonvpn --cask
 # brew install motrix --cask
 # brew install maccy
