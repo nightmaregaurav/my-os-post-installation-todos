@@ -8,7 +8,7 @@
 ## Login to Jetbrains Toolbox
 ## Install Rider, PyCharm, WebStorm, android studio
 # Install Microsoft Teams app and log in
-# Install mattermost (For Work)
+# Install mattermost (For Work) brew install mattermost
 # Install homebrew
 ## brew install docker —cask
 ## brew install docker-compose
